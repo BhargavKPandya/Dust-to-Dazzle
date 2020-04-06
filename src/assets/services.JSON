@@ -1,0 +1,67 @@
+{
+    "Services":[
+      {
+        "serviceID": 1,
+        "serviceName": "Apartment Cleaning",
+        "serviceDescription": "Cleaning Company offers a program designed to service residents of apartments and condominiums.",
+        "serviceImage": "../img/service-img-1.jpg",
+        "serviceImageAltText": "Apartment Cleaning Image"
+      },
+       {
+        "serviceID": 2,
+        "serviceName": "House Cleaning",
+        "serviceDescription": "For over 10 years we’ve performed housekeeping services according to the wishes of our clients.",
+        "serviceImage": "../img/service-img-2.jpg",
+        "serviceImageAltText": "House Cleaning Image"
+      },
+       {
+        "serviceID": 3,
+        "serviceName": "Move In / Move Out",
+        "serviceDescription": "In fact, many people say that moving is one of the most stressful and exhausting life experiences.",
+        "serviceImage": "../img/service-img-3.jpg",
+        "serviceImageAltText": "Move In / Move Out Image"
+      },
+       {
+        "serviceID": 4,
+        "serviceName": "Сarpet Сleaning",
+        "serviceDescription": "When you choose us, you get a deeper clean, faster-drying carpets and a healthier home.",
+        "serviceImage": "../img/service-img-4.jpg",
+        "serviceImageAltText": "Сarpet Сleaning Image"
+      },
+       {
+        "serviceID": 5,
+        "serviceName": "After Renovation",
+        "serviceDescription": "Anyone who has done a renovation project knows the mess that comes with it.",
+        "serviceImage": "../img/service-img-5.jpg",
+        "serviceImageAltText": "After Renovation Image"
+      },
+       {
+        "serviceID": 6,
+        "serviceName": "Curtain Cleaning",
+        "serviceDescription": "We will take down uninstall your curtains and dry-clean right on the spot!",
+        "serviceImage": "../img/service-img-6.jpg",
+        "serviceImageAltText": "Curtain Cleaning Image"
+      },
+       {
+        "serviceID": 7,
+        "serviceName": "Window Cleaning",
+        "serviceDescription": "Indulge in high-quality window cleaning from bonded professionals.",
+        "serviceImage": "../img/service-img-7.jpg",
+        "serviceImageAltText": "Window Cleaning Image"
+      },
+       {
+        "serviceID": 8,
+        "serviceName": "Commercial Cleaning",
+        "serviceDescription": "Anyone who has done a renovation project knows the mess that comes with it.",
+        "serviceImage": "../img/service-img-8.jpg",
+        "serviceImageAltText": "Commercial Cleaning Image"
+      },
+       {
+        "serviceID": 9,
+        "serviceName": "Residential Cleaning",
+        "serviceDescription": "We will take down uninstall your curtains and dry-clean right on the spot!",
+        "serviceImage": "../img/service-img-9.jpg",
+        "serviceImageAltText": "Residential Cleaning Image"
+      }
+      ]
+  }

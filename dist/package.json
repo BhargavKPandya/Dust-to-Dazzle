@@ -1,0 +1,23 @@
+{
+  "name": "ravi-website",
+  "version": "1.0.0",
+  "description": "Cleaning Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "Bhargav Pandya",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-file-include": "^2.1.1",
+    "gulp-npm-files": "^0.1.3",
+    "jquery": "^3.4.1"
+  }
+}

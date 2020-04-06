@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact - Dust to Dazzle</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="We offer wider range of different cleaning service and specialised in commerical and resident services.">
+  <meta name="keywords" content="best cleaning service, cheap cleaning service in Nelson">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Bhargav Pandya">
+  <link rel="icon" href="../../img/Dust-to-Dazzle-Logo.png" style="width: 16px; height: 16px;">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/mapbox-gl.css" />
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/flaticon.css">
+  <link rel="stylesheet" href="../css/aos.css">
+  <script src="../js/fontawesome.js"></script>
+  <script src="../js/jquery-3.4.1.slim.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/mapbox-gl.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/contact.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script defer src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script defer src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+  <!-- Add Firebase products that you want to use -->
+  <script defer src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+  <script defer src="../js/init-firebase.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark align-center">
+        <a class="navbar-brand mx-3" href="/home"><img style="width: 50px; height: 50px;" src="./../img/Dust-to-Dazzle-Logo.png" alt="Dust to Dazzle Logo"></a>
+        <button class="navbar-toggler" type="button" data-trigger="#navbarSupportedContent" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--<div class="offcanvas-header mt-3">  
+                <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
+                <h5 class="py-2 text-white">Dust To Dazzle</h5>
+              </div>-->
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="/home"><i class="fas fa-home mr-1"></i>Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="/services"><i class="fas fa-list-ul mr-1"></i>Our Services</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="/about"><i class="fas fa-user mr-1"></i>About</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="/contact"><i class="fas fa-envelope mr-1"></i>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+</header>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 pb-5">
+        <form class="form-inquiry" autocomplete="off" id="formInquiry">
+          <div class="text-center mb-4" style="padding-right: 10%;">
+            <h2 class="mb-4">Contact Us</h2>
+            <p>Please drop us a message for any inquries related to cleaning services. We wil get back to you as soon as
+              possible.</p>
+          </div>
+
+          <div class="form-label-group">
+            <input type="text" id="inputName" class="form-control" pattern=".{2,}" placeholder="Enter Your Name"
+              required>
+
+            <small class="not-error invalid-msg">Please enter valid name.</small>
+            <label for="inputName">Your Name</label>
+
+          </div>
+
+          <div class="form-label-group">
+            <input type="email" id="inputEmail" class="form-control" placeholder="Enter Your Email Address" required
+              pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$">
+            <small class="not-error invalid-msg">Please enter valid email address.</small>
+            <label for="inputEmail">Your Email Address</label>
+          </div>
+
+          <div class="form-label-group">
+            <input type="tel" id="inputPhone" class="form-control" placeholder="+64 27 230 3226" pattern="\d{9,12}"
+              required maxlength="12">
+            <small class="not-error invalid-msg">Please enter valid phone number...ex...64 27 230 3226</small>
+            <label for="inputPhone">Your Phone Number</label>
+          </div>
+          <div class="form-label-group">
+            <textarea class="form-control" id="FormControlTextarea1" rows="7" maxlength="250"
+              placeholder="Your Message or inquiry to us."></textarea>
+            <label for="FormControlTextarea1">Please write your short message for your inquiry.</label>
+          </div>
+          <button class="btn btn-lg btn-submit" id="conatctFormDustTodazzle" type="submit" disabled>Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 pb-5">
+        <div id="map">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<footer class="page-footer pt-4">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+          <h5 class="font-weight-bold text-uppercase mb-4">Dust to Dazzle Cleaning Services</h5>
+          <p>House & Commercial cleaning service in Richmond, New Zealand</p>
+          <div class="align-self-center"><img src="./../img/Dust-to-Dazzle-Logo.png" alt="Dust to Dazzle Logo" class="img-fluid"></div>
+  
+        </div>
+
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+          <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <a href="/home">HOME</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="/services">OUR SERVICES</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="/about">ABOUT</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="/contact">CONTACT</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <a target="_blank" href="https://www.google.com/maps/place/Dust+to+Dazzle+Cleaning+Services/@-41.3350745,173.1984404,15z/data=!4m5!3m4!1s0x0:0x4629a31a4c2f3f65!8m2!3d-41.3350745!4d173.1984404"><i class="fas fa-map-marker-alt mr-3"></i></a>
+                45 Maple Crescent, Richmond 7020, New Zealand</p>
+            </li>
+            <li>
+              <p>
+                <a href="mailto:dust2dazzle1@gmail.com"><i class="fas fa-envelope mr-3"></i></a>
+                dust2dazzle1@gmail.com</p>
+            </li>
+            <li>
+              <p>
+                <a href="tel:+64 27 230 3226">
+                <i class="fas fa-phone-alt mr-3"></i></a>+64 27 230 3226</p>
+            </li>
+          </ul> 
+        </div>
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+          <ul class="list-unstyled">
+            <li>
+          <a href="https://www.facebook.com/Dust-to-Dazzle-Cleaning-Services-104497867590754/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          </li>
+          <li>
+          <a href="tel:+64 27 230 3226">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+          </ul>
+        </div>  
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">Copyright ©<span id="year"></span> All rights reserved | Website is created with <i class="fas fa-heart" style="color: red;"></i> by <a style="text-decoration: none; color: inherit;" href="mailto:bhargavkpandya.22@gmail.com">Bhargav Pandya</a>.
+    </div>
+  </footer>
+  <script src="./../js/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+
+
+</body>
+
+</html>

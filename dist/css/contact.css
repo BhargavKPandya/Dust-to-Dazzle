@@ -1,0 +1,197 @@
+
+  .form-control {
+    width: 90%;
+    display: inline-block;
+    border: 1px solid #1B9CE3;
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+
+  
+  .form-inquiry {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
+  }
+  
+  .form-inquiry button:disabled{
+    display: block;
+    border: 1px solid #1b9ce3;
+    cursor: none;
+    color: #1b9ce3;
+  }
+
+  .form-inquiry button:enabled{
+    background: #1b9ce3;
+    border: 1px solid #1b9ce3;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1.25rem;
+  }
+  
+  .form-label-group > input,
+  .form-label-group > label,  .form-label-group > span {
+    height: 3.125rem;
+    padding: .75rem;
+  }
+
+
+  
+  .form-label-group > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0; /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    pointer-events: none;
+    cursor: text; /* Match the input under the label */
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+  }
+  
+  .form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-moz-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::placeholder, .form-label-group textarea::placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:not(:placeholder-shown), .form-label-group textarea:not(:placeholder-shown) {
+    padding-top: 1.25rem;
+    padding-bottom: .25rem;
+  }
+  
+  .form-label-group input:not(:placeholder-shown) ~ label, .form-label-group textarea:not(:placeholder-shown) ~ label {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 12px;
+    color: #1B9CE3;
+  }
+  input:not(:placeholder-shown) {
+    border-color: #ff8e7a;
+  }
+  input:valid {
+    border-color: #42d142;
+  }
+
+  textarea {
+    overflow: auto;
+  }
+
+  .not-error {
+    display: none;
+  } 
+  
+  .error-show {
+    display: block;
+    color: red;
+  }
+  
+  input:invalid+span:after {
+    position: absolute;
+    content: '✖';
+    padding-left: 5px;
+    height: 3.125rem;
+    padding: .75rem;
+    color: red;
+  }
+
+  
+  input:valid+span:after {
+    position: absolute;
+    content: '✓';
+    padding-left: 5px;
+    height: 3.125rem;
+    padding: .75rem;
+    color: green;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  
+  /* Fallback for Edge
+  -------------------------------------------------- */
+  @supports (-ms-ime-align: auto) {
+    .form-label-group > label {
+      display: none;
+    }
+    .form-label-group input::-ms-input-placeholder {
+      color: #777;
+    }
+  }
+  
+  /* Fallback for IE
+  -------------------------------------------------- */
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .form-label-group > label {
+      display: none;
+    }
+    .form-label-group input:-ms-input-placeholder {
+      color: #777;
+    }
+  }
+
+  #marker {
+    background-image: url('../img/maps-and-flags.svg');
+    cursor: pointer;
+    display:flex;
+    width: 50px;
+    height: 50px;
+    transform-origin:0 0;
+    transform: rotateZ(-135deg);
+    }
+     
+    .mapboxgl-popup {
+    max-width: 100px;
+    }
+
+    .mapboxgl-map {  
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray;
+    }
+
+    #map { 
+     height: 500px;
+     margin: 20px;
+     border-radius: 10px;
+    }
+
+    @media only screen and (max-width: 520px) {
+      #map { 
+        height: 350px;
+        margin: 20px;
+        border-radius: 10px;
+       }
+    }

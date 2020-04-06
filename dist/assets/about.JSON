@@ -1,0 +1,40 @@
+{
+    "AboutHire":[
+      {
+        "hireID": 1,
+        "hireTitle": "With Us, Your Satisfaction Is Guaranteed",
+        "hireDescription": "The experts at The Cleaning Company are committed to providing thorough house cleaning services for our valued customers nationwide.",
+        "hireImageClass": "fas fa-smile fa-3x"
+      },
+      {
+        "hireID": 2,
+        "hireTitle": "Our Bonded & Insured Cleaning Team",
+        "hireDescription": "Our company is fully bonded and insured, which means you can have peace of mind when you hire us as your residential cleaning company.",
+        "hireImageClass": "fas fa-user-shield fa-3x"
+      },
+      {
+        "hireID": 3,
+        "hireTitle": "Our Teams Consist of Fully Trained Employees",
+        "hireDescription": "It means every individual goes through a thorough screening process, and then is trained in every aspect of our home cleaning services.",
+        "hireImageClass": "fas fa-users fa-3x"
+      },
+      {
+        "hireID": 4,
+        "hireTitle": "Locally Owned Home Cleaning Services",
+        "hireDescription": "You should be able to enjoy peace of mind knowing that your home is in good hands, while focusing on things that matter more to you.",
+        "hireImageClass": "fas fa-map-marked-alt fa-3x"
+      },
+      {
+        "hireID": 5,
+        "hireTitle": "Free Over the Phone Estimates",
+        "hireDescription": "Cleaning Company service is the key to keeping a beautiful home while making more time for yourself and the things you love most.",
+        "hireImageClass": "fas fa-phone-alt fa-3x"
+      },
+      {
+        "hireID": 6,
+        "hireTitle": "We Guarantee Our Work",
+        "hireDescription": "Cleaning Company strives to provide the highest level of quality, service and value to each and every customer. If you are not satisfied, please inform us.",
+        "hireImageClass": "fas fa-thumbs-up fa-3x"
+      }
+    ]
+}

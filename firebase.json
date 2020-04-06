@@ -1,0 +1,30 @@
+{
+  "hosting": {
+    "public": "dist",
+    "cleanUrls": true,
+    "ignore": [
+      "firebase.json"
+    ],
+    "redirects": [ {
+      "source": "/about",
+      "destination": "/pages/about",
+      "type": 301
+    },
+    {
+      "source": "/contact",
+      "destination": "/pages/contact",
+      "type": 301
+    },
+    {
+      "source": "/services",
+      "destination": "/pages/services",
+      "type": 301
+    },
+    {
+      "source": "/home",
+      "destination": "/index",
+      "type": 301
+    }
+    ]
+  }
+}
